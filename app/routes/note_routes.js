@@ -47,7 +47,7 @@ module.exports = function (app,database){
             if(err){
                 res.send({'error': 'An error has occured'});
             } else {
-                res.send(result.ops[0])
+                res.send("Inserted row" + result.ops[0])
             }
 
         });
